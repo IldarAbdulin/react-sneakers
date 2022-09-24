@@ -1,0 +1,144 @@
+.overlay{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.484);
+    z-index: 1;
+  }
+  .drawer{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    width: 420px;
+    height: 100%;
+    right: 0;
+    background: #fff;
+    box-shadow: -10px 4px 24px rgba(0, 0, 0, 0.1);
+    h2{
+      margin: 0;
+    }
+    .cartItemREmove{
+        cursor: pointer;
+        opacity: .8;
+        transition: opacity .15s ease-in-out;
+            &:hover{
+              opacity: 1;
+            }
+        }
+        .cartEmpty{
+          margin-bottom: 50px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          flex: 1;
+          .greenButton{
+            position: relative;
+            width: 100%;
+            height: 55px;
+            border: none;
+            background: #9DD558;
+            border-radius: 18px;
+            color: #fff;
+            font-size: 16px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: background .2s ease-in-out;
+            &:hover{
+              img{
+                  transform: translateX(-5px);
+              }
+            }
+            img{
+              position: absolute;
+              left: 30px;
+              top: 21px;
+              transition: transform .2s ease-in-out;
+            }
+            &:hover{
+              background: lighten(#9DD558, 5%);
+            }
+            &:active{
+              background: darken(#9DD558, 5%);
+            }
+          }
+        }
+    }
+    
+    .cartTotalBlock{
+        cursor: pointer;
+      ul{
+        margin-bottom: 30px !important;
+        li{
+          display: flex;
+          align-items: flex-end;
+          margin-bottom: 20px;
+          div{
+            flex: 1;
+            height: 2px;
+            border-bottom: 1px dashed #cfcece;
+            position: relative;
+            top: -4px;
+            margin: 0 10px;
+          }
+        }
+      }
+      .secondGreenButton{
+        position: relative;
+        width: 100%;
+        height: 55px;
+        border: none;
+        background: #9DD558;
+        border-radius: 18px;
+        color: #fff;
+        font-size: 16px;
+        font-weight: 500;
+        cursor: pointer;
+        transition: background .2s ease-in-out;
+        &:hover{
+          img{
+              transform: translateX(5px);
+          }
+        }
+        img{
+          position: absolute;
+          right: 35px;
+          top: 21px;
+          transition: transform .2s ease-in-out;
+        }
+        &:hover{
+          background: lighten(#9DD558, 5%);
+        }
+        &:active{
+          background: darken(#9DD558, 5%);
+        }
+      }
+    }
+
+  .cartItem{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    border: 1px solid #f3f3f3;
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 5px 15px;
+    p{
+      font-size: 14px;
+    }
+    b{
+      font-size: 16px;
+    }
+    .cartItemREmove{
+      opacity: .5;
+      cursor: pointer;
+      transition: opacity .15s ease-in-out;
+      &:hover{
+        opacity: 1;
+      }
+    }
+  }
