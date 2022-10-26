@@ -1,4 +1,3 @@
-import headerStyles from './Header.module.scss';
 import { Link } from 'react-router-dom'
 
 function Header(props) {
