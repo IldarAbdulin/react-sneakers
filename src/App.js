@@ -185,7 +185,7 @@ function App() {
           />
 
           <Route
-            path="/favorites"
+            path="favorites"
             element={
               <section>
                 <div className="content p-40">
@@ -210,7 +210,7 @@ function App() {
               </section>
             }
           />
-          <Route path="/orders" element={<Orders />} />
+          <Route path="orders" element={<Orders />} />
         </Routes>
       </div>
     </AppContext.Provider>
