@@ -89,7 +89,7 @@ function Drawer({ onClose, onRemove, items = [], opened }) {
                 <li>
                   <span>Налог 5%:</span>
                   <div></div>
-                  <b>{totalPrice} руб.</b>
+                  <b>{totalPrice / 100 * 5} руб.</b>
                 </li>
               </ul>
               <button
