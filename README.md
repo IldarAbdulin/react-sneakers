@@ -1,4 +1,4 @@
-(https://react-sneakers-9bfy37bw3-ildarabdulin.vercel.app/)
+(https://react-sneakers-9bfy37bw3-ildarabdulin.vercel.app/);
 
 # Getting Started with Create React App
 
